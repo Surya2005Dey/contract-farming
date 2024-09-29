@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assured Contract Farming System</title>
+    <link rel="stylesheet" href="styles1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Google Fonts (Optional) -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-logo border">
+            <!-- <div class="nav-logo border"> -->
+                <img class="logo" src="logo1.png">                  
+        </div>
+        </div class="tab" >
+            <div class="nav1">
+                   <div class="nav1-logo"><h1>AgroDealz</h1></div>
+                <div class="nav-search"> 
+                   <select class="search-select">
+                      <option>All</option>
+                   </select>
+                   <input placeholder="Search Here" class="search-input">
+                   <div class="search-icon">
+                     <i class="fa-solid fa-magnifying-glass"></i>
+                   </div>
+                </div>
+                      <!-- <ul class="nav-links">
+                     <li><a href="#home">Home</a></li>
+                      <li><a href="#about">About</a></li>
+                      <li><a href="#services">Services</a></li>
+                       <li><a href="#contact">Contact</a></li>
+                      </ul> -->
+                <div class="auth-buttons">
+                   <a href="login.html"> <button>Login</button></a>
+                   <a href="register1.html"><button >Sign In</button></a>
+                </div>
+                <!-- Dashboard Link (Hidden by default) -->
+                <div class="dashboard" id="dashboard" style="display: none;">
+                    <button id="dashboard-btn">Dashboard</button>
+                    <div id="dropdown-content" style="display: none;">
+                        <a href="#profile">Profile</a>
+                        <a href="#settings">Settings</a>
+                        <a href="#logout" id="logout-btn">Logout</a>
+                    </div>
+                </div>
+                
+                <div class="language-selector">
+            
+                    <select name="languages" id="languages" >
+                         <option value="en">English</option>
+                         <option value="es">Español</option>
+                         <option value="hi">हिन्दी</option>
+                      <!-- Add more languages as needed -->
+                    </select>
+                </div>
+            </div>
+            <div class="panal">
+         
+                  <!-- <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                     <li><a href="#about">About</a></li>
+                     <li><a href="#services">Services</a></li>
+                      <li><a href="#contact">Contact</a></li>
+                  </ul> -->
+                   <div class="panal-home">
+                      <h3 class="panal-home-color"><a href="#home">Home</a></h3>
+                    </div>
+                    <div class="panal-home">
+                      <h3 class="panal-home-color"><a href="#about">About</a></h3>
+                   </div>
+                   <div class="panal-home">
+                      <h3 class="panal-home-color"><a href="#services">Services</a></h3>
+                   </div>
+                   <div class="panal-home">
+                      <h3 class="panal-home-color"><a href="#vegetables">Vegetables</a></h3>
+                   </div>
+                   <div  class="panal-home">
+                     <h3 class="panal-home-color"><a href="#contact">Contact Us</a></h3>
+                   </div>
+           </div>
+        </div>
+    </nav>
+    
+
+    
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        
+        <div class="hero-content">
+            <h1>Assured Contract Farming System</h1>
+            <p>Ensuring Stable Market Access for Farmers</p>
+            <a href="#about" class="cta-button">Learn More</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>
+            Farmers often face uncertainties in market access, leading to fluctuating incomes.
+            Contract farming can provide stability by ensuring farmers have guaranteed buyers for their produce.
+        </p>
+        <p>
+            Our platform facilitates assured contract farming agreements between farmers and buyers.
+            We enable transparent communication, secure contracts, and timely payments, ensuring farmers have a reliable market for their crops.
+        </p>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="service-boxes">
+            <div class="service-box">
+                <h3>Marketplace</h3>
+                <p>Connect with potential buyers and sellers in a trusted environment.</p>
+            </div>
+            <div class="service-box">
+                <h3>Contract Management</h3>
+                <p>Manage contracts efficiently with our comprehensive tools.</p>
+            </div>
+            <div class="service-box">
+                <h3>Price Negotiation</h3>
+                <p>Negotiate fair prices to ensure profitability and sustainability.</p>
+            </div>
+            <div class="service-box">
+                <h3>Secure Payments</h3>
+                <p>Ensure timely and secure payments through our platform.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vegetables Section -->
+    <section id="vegetables" class="vegetables">
+        <h2>Available Vegetables</h2>
+        <div class="vegetable-boxes">
+            <div class="vegetable-box">
+                <img src="tomato.jpg" alt="Tomato">
+                <h3>Tomatoes</h3>
+            </div>
+            <div class="vegetable-box">
+                <img src="potato.jpeg" alt="Potato">
+                <h3>Potatoes</h3>
+            </div>
+            <div class="vegetable-box">
+                <img src="paddy seeds.jpg" alt="Paddy Seeds">
+                <h3>Paddy Seeds</h3>
+            </div>
+            <div class="vegetable-box">
+                <img src="wheat.jpg" alt="Wheat">
+                <h3>Wheat</h3>
+            </div>
+            <!-- Add more vegetables as needed -->
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form class="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Login Modal -->
+    <div id="login-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Login</h2>
+            <form class="auth-form">
+                <label for="login-email">Email:</label>
+                <input type="email" id="login-email" name="login-email" required>
+
+                <label for="login-password">Password:</label>
+                <input type="password" id="login-password" name="login-password" required>
+
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Sign In Modal -->
+    <div id="signin-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Sign In</h2>
+            <form class="auth-form">
+                <label for="signin-name">Name:</label>
+                <input type="text" id="signin-name" name="signin-name" required>
+
+                <label for="signin-email">Email:</label>
+                <input type="email" id="signin-email" name="signin-email" required>
+
+                <label for="signin-password">Password:</label>
+                <input type="password" id="signin-password" name="signin-password" required>
+
+                <button type="submit">Sign In</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Assured Contract Farming System. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript for Modal Functionality -->
+    <script>
+        // Get modal elements
+        const loginBtn = document.getElementById('login-btn');
+        const signinBtn = document.getElementById('signin-btn');
+        const loginModal = document.getElementById('login-modal');
+        const signinModal = document.getElementById('signin-modal');
+        const closeButtons = document.getElementsByClassName('close');
+
+        // Open login modal
+        loginBtn.onclick = function() {
+            loginModal.style.display = 'block';
+        }
+
+        // Open signin modal
+        signinBtn.onclick = function() {
+            signinModal.style.display = 'block';
+        }
+
+        // Close modals when 'x' is clicked
+        for (let btn of closeButtons) {
+            btn.onclick = function() {
+                loginModal.style.display = 'none';
+                signinModal.style.display = 'none';
+            }
+        }
+
+        // Close modals when clicking outside of the modal content
+        window.onclick = function(event) {
+            if (event.target == loginModal) {
+                loginModal.style.display = 'none';
+            }
+            if (event.target == signinModal) {
+                signinModal.style.display = 'none';
+            }
+        }
+    </script>
+    <script src="script1.js"></script>
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-r from-green-400 to-blue-500 min-h-screen  flex items-center justify-center">
+    <div class="bg-white shadow-lg rounded-lg p-10 w-full max-w-4xl">
+        <h1 class="text-4xl font-bold text-center text-gray-700 mb-6"></br>To Access our Platform Features </br> Do Register Here! </h1>
+        <div class="flex justify-center mb-6 p-5 ">
+            <button id="farmerBtn" onclick="showFarmerForm()" class="px-7 py-3 mx-4 font-bold text-white bg-green-500 rounded-lg hover:bg-blue-800 focus:outline-none">Farmer</button>
+            <button id="buyerBtn" onclick="showBuyerForm()" class="px-7 py-3 mx-4 font-bold text-white bg-blue-500 rounded-lg hover:bg-green-800 focus:outline-none">Buyer</button>
+        </div>
+        <div class="flex justify-center mb-6 p-5">
+            <a href="index1.html">
+                <button type="button" class="px-4 py-3 mx-4 font-bold text-1.5xl text-white bg-violet-600 rounded-lg hover:bg-yellow-500 focus:outline-none">Back to Main Page</button>
+            </a>
+        </div>
+
+        <!-- Farmer Sign-Up Form -->
+        <form id="farmerForm" class="signup-form" style="display:none;">
+            <h2 class="text-xl font-semibold text-gray-700 mb-4">Farmer Sign-Up</h2>
+            <div class="mb-4">
+                <label for="farmerName" class="block text-sm font-medium text-gray-700">Name:</label>
+                <input type="text" id="farmerName" name="farmerName" class="w-full p-2 border border-gray-300 rounded-lg focus:ring focus:ring-green-200 focus:border-green-500" required>
+            </div>
+            <div class="mb-4">
+                <label for="farmerEmail" class="block text-sm font-medium text-gray-700">Email:</label>
+                <input type="email" id="farmerEmail" name="farmerEmail" class="w-full p-2 border border-gray-300 rounded-lg focus:ring focus:ring-green-200 focus:border-green-500" required>
+            </div>
+            <div class="mb-4">
+                <label for="farmerPhone" class="block text-sm font-medium text-gray-700">Phone Number:</label>
+                <input type="text" id="farmerPhone" name="farmerPhone" class="w-full p-2 border border-gray-300 rounded-lg focus:ring focus:ring-green-200 focus:border-green-500" required>
+            </div>
+            <div class="mb-4">
+                <label for="farmerAadhaar" class="block text-sm font-medium text-gray-700">Aadhaar Number:</label>
+                <input type="text" id="farmerAadhaar" name="farmerAadhaar" class="w-full p-2 border border-gray-300 rounded-lg focus:ring focus:ring-green-200 focus:border-green-500" required>
+            </div>
+            <div class="mb-4">
+                <label for="farmerAddress" class="block text-sm font-medium text-gray-700">Address:</label>
+                <input type="text" id="farmerAddress" name="farmerAddress" class="w-full p-2 border border-gray-300 rounded-lg focus:ring focus:ring-green-200 focus:border-green-500" required>
+            </div>
+            <div class="mb-4">
+                <label for="farmerLandDoc" class="block text-sm font-medium text-gray-700">Land Paper Document:</label>
+                <input type="file" id="farmerLandDoc" name="farmerLandDoc" class="w-full p-2 border border-gray-300 rounded-lg focus:ring focus:ring-green-200 focus:border-green-500" required>
+            </div>
+            <div class="mb-4">
+                <label for="farmerKCC" class="block text-sm font-medium text-gray-700">Kisan Credit Card Number:</label>
+                <input type="text" id="farmerKCC" name="farmerKCC" class="w-full p-2 border border-gray-300 rounded-lg focus:ring focus:ring-green-200 focus:border-green-500" required>
+            </div>
+            <div class="mb-4">
+                <label for="farmerBank" class="block text-sm font-medium text-gray-700">Bank Account Details:</label>
+                <input type="text" id="farmerBank" name="farmerBank" class="w-full p-2 border border-gray-300 rounded-lg focus:ring focus:ring-green-200 focus:border-green-500" required>
+            </div>
+            <div class="mb-4">
+                <label for="captcha" class="block text-sm font-medium text-gray-700">Captcha:</label>
+                <input type="text" id="captcha" name="captcha" class="w-full p-2 border border-gray-300 rounded-lg focus:ring focus:ring-green-200 focus:border-green-500" required>
+            </div>
+            <div class="mb-6">
+                <label for="farmerPassword" class="block text-sm font-medium text-gray-700">Password:</label>
+                <input type="password" id="farmerPassword" name="farmerPassword" class="w-full p-2 border border-gray-300 rounded-lg focus:ring focus:ring-green-200 focus:border-green-500" required>
+            </div>
+            <button type="submit" class="w-full px-4 py-2 font-semibold text-white bg-green-500 rounded-lg hover:bg-green-600 focus:outline-none">Register as Farmer</button>
+        </form>
+
+        <!-- Buyer Sign-Up Form -->
+        <form id="buyerForm" class="signup-form" style="display:none;">
+            <h2 class="text-xl font-semibold text-gray-700 mb-4">Buyer Sign-Up</h2>
+            <div class="mb-4">
+                <label for="buyerName" class="block text-sm font-medium text-gray-700">Name:</label>
+                <input type="text" id="buyerName" name="buyerName" class="w-full p-2 border border-gray-300 rounded-lg focus:ring focus:ring-blue-200 focus:border-blue-500" required>
+            </div>
+            <div class="mb-4">
+                <label for="buyerEmail" class="block text-sm font-medium text-gray-700">Email:</label>
+                <input type="email" id="buyerEmail" name="buyerEmail" class="w-full p-2 border border-gray-300 rounded-lg focus:ring focus:ring-blue-200 focus:border-blue-500" required>
+            </div>
+            <div class="mb-4">
+                <label for="buyerPhone" class="block text-sm font-medium text-gray-700">Phone Number:</label>
+                <input type="text" id="buyerPhone" name="buyerPhone" class="w-full p-2 border border-gray-300 rounded-lg focus:ring focus:ring-blue-200 focus:border-blue-500" required>
+            </div>
+            <div class="mb-4">
+                <label for="buyerAadhaar" class="block text-sm font-medium text-gray-700">Aadhaar Number:</label>
+                <input type="text" id="buyerAadhaar" name="buyerAadhaar" class="w-full p-2 border border-gray-300 rounded-lg focus:ring focus:ring-blue-200 focus:border-blue-500" required>
+            </div>
+            <div class="mb-4">
+                <label for="buyerAddress" class="block text-sm font-medium text-gray-700">Address:</label>
+                <input type="text" id="buyerAddress" name="buyerAddress" class="w-full p-2 border border-gray-300 rounded-lg focus:ring focus:ring-blue-200 focus:border-blue-500" required>
+            </div>
+            <div class="mb-4">
+                <label for="buyerBusinessName" class="block text-sm font-medium text-gray-700">Business Name:</label>
+                <input type="text" id="buyerBusinessName" name="buyerBusinessName" class="w-full p-2 border border-gray-300 rounded-lg focus:ring focus:ring-blue-200 focus:border-blue-500" required>
+            </div>
+            <div class="mb-4">
+                <label for="buyerBusinessID" class="block text-sm font-medium text-gray-700">Business ID:</label>
+                <input type="text" id="buyerBusinessID" name="buyerBusinessID" class="w-full p-2 border border-gray-300 rounded-lg focus:ring focus:ring-blue-200 focus:border-blue-500" required>
+            </div>
+            <div class="mb-4">
+                <label for="buyerBillingAddress" class="block text-sm font-medium text-gray-700">Billing Address:</label>
+                <input type="text" id="buyerBillingAddress" name="buyerBillingAddress" class="w-full p-2 border border-gray-300 rounded-lg focus:ring focus:ring-blue-200 focus:border-blue-500" required>
+            </div>
+            <div class="mb-4">
+                <label for="captcha" class="block text-sm font-medium text-gray-700">Captcha:</label>
+                <input type="text" id="captcha" name="captcha" class="w-full p-2 border border-gray-300 rounded-lg focus:ring focus:ring-blue-200 focus:border-blue-500" required>
+            </div>
+            <div class="mb-6">
+                <label for="buyerPassword" class="block text-sm font-medium text-gray-700">Password:</label>
+                <input type="password" id="buyerPassword" name="buyerPassword" class="w-full p-2 border border-gray-300 rounded-lg focus:ring focus:ring-blue-200 focus:border-blue-500" required>
+            </div>
+            <button type="submit" class="w-full px-4 py-2 font-semibold text-white bg-blue-500 rounded-lg hover:bg-blue-600 focus:outline-none">Register as Buyer</button>
+        </form>
+    </div>
+
+    <script>
+        function showFarmerForm() {
+            document.getElementById('farmerForm').style.display = 'block';
+            document.getElementById('buyerForm').style.display = 'none';
+        }
+
+        function showBuyerForm() {
+            document.getElementById('buyerForm').style.display = 'block';
+            document.getElementById('farmerForm').style.display = 'none';
+        }
+    </script>
+</body>
+</html>

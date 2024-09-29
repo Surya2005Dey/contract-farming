@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .background-gradient {
+            background: linear-gradient(to right, #ccde42, #2fc1cb);
+        }
+    </style>
+</head>
+<body class="background-gradient flex justify-center items-center h-screen">
+
+    <div class="w-full max-w-lg bg-white rounded-lg shadow-lg p-8">
+        <!-- Main buttons -->
+        <div class="flex flex-col space-y-4 text-center mb-6">
+            <h1 class="text-4xl font-bold text-center text-gray-700 mb-6">To Login</br>Click Here!</h1>
+            <button id="farmerLoginBtn" class="bg-green-500 text-white font-bold py-3 px-6 rounded-lg shadow-md hover:bg-green-600 transition">Farmer Login</button>
+            <button id="buyerLoginBtn" class="bg-blue-500 text-white font-bold py-3 px-6 rounded-lg shadow-md hover:bg-blue-600 transition">Buyer Login</button>
+            <a href="index1.html">
+                 <button id="backBtn" class="bg-red-500 text-white font-bold py-3 px-6 rounded-lg shadow-md hover:bg-red-600 transition">Back to Main Page</button>
+            </a>
+        </div>
+
+        <!-- Farmer Login Form -->
+        <div id="farmerLoginForm" class="hidden">
+            <h2 class="text-center text-3xl font-bold mb-6 text-gray-800">Farmer Login</h2>
+            <form class="space-y-6">
+                <div>
+                    <label class="block text-gray-700 text-sm font-medium mb-1" for="mobile">Mobile Number</label>
+                    <input id="mobile" type="tel" placeholder="Enter Mobile Number" class="w-full border border-gray-300 rounded-lg p-4 text-gray-700 focus:outline-none focus:ring-2 focus:ring-green-500">
+                </div>
+                <div>
+                    <label class="block text-gray-700 text-sm font-medium mb-1" for="password">Password</label>
+                    <input id="password" type="password" placeholder="Enter Password" class="w-full border border-gray-300 rounded-lg p-4 text-gray-700 focus:outline-none focus:ring-2 focus:ring-green-500">
+                </div>
+                <div>
+                    <label class="block text-gray-700 text-sm font-medium mb-1" for="captcha">Captcha</label>
+                    <input id="captcha" type="text" placeholder="Enter Captcha" class="w-full border border-gray-300 rounded-lg p-4 text-gray-700 focus:outline-none focus:ring-2 focus:ring-green-500">
+                </div>
+                <button class="bg-green-500 text-white font-bold py-3 px-6 rounded-lg shadow-md hover:bg-green-600 transition w-full" type="submit">Login</button>
+            </form>
+        </div>
+
+        <!-- Buyer Login Form -->
+        <div id="buyerLoginForm" class="hidden">
+            <h2 class="text-center text-3xl font-bold mb-6 text-gray-800">Buyer Login</h2>
+            <form class="space-y-6">
+                <div>
+                    <label class="block text-gray-700 text-sm font-medium mb-1" for="email">Email</label>
+                    <input id="email" type="email" placeholder="Enter Email" class="w-full border border-gray-300 rounded-lg p-4 text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                </div>
+                <div>
+                    <label class="block text-gray-700 text-sm font-medium mb-1" for="buyerPassword">Password</label>
+                    <input id="buyerPassword" type="password" placeholder="Enter Password" class="w-full border border-gray-300 rounded-lg p-4 text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                </div>
+                <div>
+                    <label class="block text-gray-700 text-sm font-medium mb-1" for="buyerCaptcha">Captcha</label>
+                    <input id="buyerCaptcha" type="text" placeholder="Enter Captcha" class="w-full border border-gray-300 rounded-lg p-4 text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                </div>
+                <button class="bg-blue-500 text-white font-bold py-3 px-6 rounded-lg shadow-md hover:bg-blue-600 transition w-full" type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // Toggle between login forms
+        const farmerLoginBtn = document.getElementById('farmerLoginBtn');
+        const buyerLoginBtn = document.getElementById('buyerLoginBtn');
+        const backBtn = document.getElementById('backBtn');
+        const farmerLoginForm = document.getElementById('farmerLoginForm');
+        const buyerLoginForm = document.getElementById('buyerLoginForm');
+
+        farmerLoginBtn.addEventListener('click', () => {
+            farmerLoginForm.classList.remove('hidden');
+            buyerLoginForm.classList.add('hidden');
+        });
+
+        buyerLoginBtn.addEventListener('click', () => {
+            buyerLoginForm.classList.remove('hidden');
+            farmerLoginForm.classList.add('hidden');
+        });
+
+        backBtn.addEventListener('click', () => {
+            farmerLoginForm.classList.add('hidden');
+            buyerLoginForm.classList.add('hidden');
+        });
+    </script>
+
+</body>
+</html>
